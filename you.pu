@@ -1,0 +1,10 @@
+#This program tells the user if they can pay the child price for the zoo
+
+CHILD_AGE = 13
+age = int(input("What is your age"))
+if age <= CHILD_AGE:
+    print("You pay the child price")
+else:
+   print("You pay the adult price")
+
+print("Welcome to the zoo")
