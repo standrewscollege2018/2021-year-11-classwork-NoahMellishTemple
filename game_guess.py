@@ -1,6 +1,7 @@
 import random
 high_score = 1000
 keep_playing = True
+check_number = True
 while keep_playing == True:
     number = random.randint(1,100)
     keep_asking = True
@@ -8,6 +9,12 @@ while keep_playing == True:
 
     while keep_asking == True:
         counter += 1
+    while check_number = True:
+        try:
+            guess = int(input("Guess a number:"))
+            check_number = False
+        except:
+            print("Please enter a integer")
         guess = int(input("Guess a number between 1-100"))
         if guess == number:
             keep_asking = False
